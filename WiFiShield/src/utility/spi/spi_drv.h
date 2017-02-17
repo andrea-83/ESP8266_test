@@ -31,14 +31,14 @@
 #include <inttypes.h>
 #include "utility/wifi_spi.h"
 
-#define SPI_START_CMD_DELAY 	60
+//#define SPI_START_CMD_DELAY 	60
 #define NO_LAST_PARAM   0
 #define LAST_PARAM      1
 
 #define DUMMY_DATA  0x00
 
 // wait time for slave data (microseconds)
-#define SLAVEREADY_TIME 5
+//#define SLAVEREADY_TIME 5
 #define SPI_SLAVE_BUFFER 32
 
 #define WAIT_FOR_SLAVE_SELECT()	 \
