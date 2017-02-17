@@ -101,7 +101,7 @@ void ServerDrv::stopClient(uint8_t sock)
     if (!commDrv.waitResponseCmd(STOP_CLIENT_TCP_CMD, PARAM_NUMS_1, &_data, &_dataLen))
     {
         WARN("error waitResponse");
-				Serial.println("stop error");
+				//Serial.println("stop error");
     }
     commDrv.commSlaveDeselect();
 }
@@ -123,7 +123,7 @@ uint8_t ServerDrv::getServerState(uint8_t sock)
     if (!commDrv.waitResponseCmd(GET_STATE_TCP_CMD, PARAM_NUMS_1, &_data, &_dataLen))
     {
         WARN("error waitResponse");
-				Serial.println("error server state");
+				//Serial.println("error server state");
     }
     commDrv.commSlaveDeselect();
    return _data;
@@ -145,7 +145,7 @@ uint8_t ServerDrv::getClientState(uint8_t sock)
     if (!commDrv.waitResponseCmd(GET_CLIENT_STATE_TCP_CMD, PARAM_NUMS_1, &_data, &_dataLen))
     {
         WARN("error waitResponse");
-				Serial.println("error client state");
+				//Serial.println("error client state");
     }
     commDrv.commSlaveDeselect();
    return _data;
