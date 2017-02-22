@@ -1,0 +1,2 @@
+esptool -vv -cd ck -cb 115200 -cp [YOUR USB SERIAL PORT] -ca 0x00000 -cf firmware_primo_20170221.bin -ca 0x00300000 -cf data_primo_20170221.bin
+
